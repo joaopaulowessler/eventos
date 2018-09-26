@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Eventos</string>
+    <string name="app_name">Easy Party</string>
+
+    <!-- Tela Login  -->
+    <string name="login_hint_email">Email</string>
+    <string name="login_hint_senha">Senha</string>
+    <string name="login_checkbox_relembrar">Relembrar minha senha</string>
+    <string name="login_button_entrar">Entrar</string>
+    <string name="login_cadastro">Cadastre-se</string>
+
 </resources>
