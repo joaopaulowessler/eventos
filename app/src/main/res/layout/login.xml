@@ -68,7 +68,7 @@
             android:id="@+id/btnEntrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/login_button_entrar"
+            android:text="@string/login_btn_entrar"
             android:layout_marginTop="30dp"
             android:textSize="17dp"
             android:background="@drawable/shape_btnlogin"/>

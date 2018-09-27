@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn15anos"
+            style="@style/btnServiceTheme"
+            android:text="@string/menu_15"
+            />
+        <Button
+            android:id="@+id/btnAniversario"
+            style="@style/btnServiceTheme"
+            android:text="@string/menu_aniversario"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/btnCasamento"
+            style="@style/btnServiceTheme"
+            android:text="@string/menu_casamento"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/btnChurrasco"
+            style="@style/btnServiceTheme"
+            android:text="@string/menu_churrasco"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/btnEmpresarial"
+            style="@style/btnServiceTheme"
+            android:text="@string/menu_empresarial"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/btnFestaGerak"
+            style="@style/btnServiceTheme"
+            android:text="@string/menu_festa_geral"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/btnFestaInfantil"
+            style="@style/btnServiceTheme"
+            android:text="@string/menu_festa_infantil"
+            android:textAlignment="center"
+            />
+        <Button
+            android:id="@+id/btnFormatura"
+            style="@style/btnServiceTheme"
+            android:text="@string/menu_formatura"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+</ScrollView>

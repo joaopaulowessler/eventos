@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/fundoLogin"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/cadastro_titulo"
+        android:textSize="35dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadastro_nome"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/editNomeCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_edtlogin"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadastro_email"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/editEmailCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edtlogin"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadastro_data_nascimento"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/editDtNascCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edtlogin"
+
+            android:inputType="date"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadastro_telefone"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/editTelefoneCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edtlogin"
+            android:height="35dp"
+            android:inputType="phone"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadastro_senha"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edtlogin"
+            android:height="35dp"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/btnSalvarCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadastro_btn"
+            android:layout_marginTop="30dp"
+            android:textSize="17dp"
+            android:background="@drawable/shape_btnlogin"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

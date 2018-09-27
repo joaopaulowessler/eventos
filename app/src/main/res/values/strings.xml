@@ -5,7 +5,27 @@
     <string name="login_hint_email">Email</string>
     <string name="login_hint_senha">Senha</string>
     <string name="login_checkbox_relembrar">Relembrar minha senha</string>
-    <string name="login_button_entrar">Entrar</string>
+    <string name="login_btn_entrar">Entrar</string>
     <string name="login_cadastro">Cadastre-se</string>
+
+    <!-- Tela Cadastro -->
+    <string name="cadastro_titulo">Cadastro</string>
+    <string name="cadastro_nome">Nome:</string>
+    <string name="cadastro_email">Email:</string>
+    <string name="cadastro_data_nascimento">Data de Nascimento:</string>
+    <string name="cadastro_telefone">Telefone:</string>
+    <string name="cadastro_senha">Senha:</string>
+    <string name="cadastro_btn">Salvar</string>
+
+    <!-- Tela Menu Principal -->
+    <string name="menu_15">15 Anos</string>
+    <string name="menu_aniversario">Aniversário</string>
+    <string name="menu_casamento">Casamento</string>
+    <string name="menu_churrasco">Churrasco</string>
+    <string name="menu_empresarial">Empresarial</string>
+    <string name="menu_festa_geral">Festa em geral</string>
+    <string name="menu_festa_infantil">Festa Infantil</string>
+    <string name="menu_formatura">Formatura</string>
+
 
 </resources>
