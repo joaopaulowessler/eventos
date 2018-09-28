@@ -9,52 +9,244 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btn15anos"
-            style="@style/btnServiceTheme"
-            android:text="@string/menu_15"
-            />
-        <Button
-            android:id="@+id/btnAniversario"
-            style="@style/btnServiceTheme"
-            android:text="@string/menu_aniversario"
-            android:textAlignment="center"
-            />
-        <Button
-            android:id="@+id/btnCasamento"
-            style="@style/btnServiceTheme"
-            android:text="@string/menu_casamento"
-            android:textAlignment="center"
-            />
-        <Button
-            android:id="@+id/btnChurrasco"
-            style="@style/btnServiceTheme"
-            android:text="@string/menu_churrasco"
-            android:textAlignment="center"
-            />
-        <Button
-            android:id="@+id/btnEmpresarial"
-            style="@style/btnServiceTheme"
-            android:text="@string/menu_empresarial"
-            android:textAlignment="center"
-            />
-        <Button
-            android:id="@+id/btnFestaGerak"
-            style="@style/btnServiceTheme"
-            android:text="@string/menu_festa_geral"
-            android:textAlignment="center"
-            />
-        <Button
-            android:id="@+id/btnFestaInfantil"
-            style="@style/btnServiceTheme"
-            android:text="@string/menu_festa_infantil"
-            android:textAlignment="center"
-            />
-        <Button
-            android:id="@+id/btnFormatura"
-            style="@style/btnServiceTheme"
-            android:text="@string/menu_formatura"
-            android:textAlignment="center"
-            />
+        <LinearLayout
+            android:id="@+id/festaQuinze"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="#D3D3D3"
+            android:padding="20dp"
+            android:weightSum="30"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone_padrao_menu_princ"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_15"
+                android:layout_weight="25"
+                android:textSize="@dimen/sizeText"
+                android:textColor="@color/colorAccent"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone_entrar_menu_princ"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aniversario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:weightSum="30"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone_padrao_menu_princ"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_aniversario"
+                android:layout_weight="25"
+                android:textSize="@dimen/sizeText"
+                android:textColor="@color/colorAccent"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone_entrar_menu_princ"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/casamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="#D3D3D3"
+            android:padding="20dp"
+            android:weightSum="30"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone_padrao_menu_princ"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_casamento"
+                android:layout_weight="25"
+                android:textSize="@dimen/sizeText"
+                android:textColor="@color/colorAccent"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone_entrar_menu_princ"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/churrasco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:weightSum="30"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone_padrao_menu_princ"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_churrasco"
+                android:layout_weight="25"
+                android:textSize="@dimen/sizeText"
+                android:textColor="@color/colorAccent"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone_entrar_menu_princ"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/empresarial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="#D3D3D3"
+            android:padding="20dp"
+            android:weightSum="30"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone_padrao_menu_princ"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_empresarial"
+                android:layout_weight="25"
+                android:textSize="@dimen/sizeText"
+                android:textColor="@color/colorAccent"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone_entrar_menu_princ"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/festaGeral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:weightSum="30"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone_padrao_menu_princ"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_festa_geral"
+                android:layout_weight="25"
+                android:textSize="@dimen/sizeText"
+                android:textColor="@color/colorAccent"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone_entrar_menu_princ"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/festaInfantil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="#D3D3D3"
+            android:padding="20dp"
+            android:weightSum="30"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone_padrao_menu_princ"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_festa_infantil"
+                android:layout_weight="25"
+                android:textSize="@dimen/sizeText"
+                android:textColor="@color/colorAccent"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone_entrar_menu_princ"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/formatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:weightSum="30"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone_padrao_menu_princ"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_formatura"
+                android:layout_weight="25"
+                android:textSize="@dimen/sizeText"
+                android:textColor="@color/colorAccent"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icone_entrar_menu_princ"/>
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

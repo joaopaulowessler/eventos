@@ -27,5 +27,9 @@
     <string name="menu_festa_infantil">Festa Infantil</string>
     <string name="menu_formatura">Formatura</string>
 
-
+    <!-- Tela Adicionar Convidados-->
+    <string name="adc_titulo">Adicionar Convidados</string>
+    <string name="adc_nome">Nome:</string>
+    <string name="adc_cpf">CPF:</string>
+    <string name="adc_idade">Idade:</string>
 </resources>
