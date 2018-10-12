@@ -20,7 +20,7 @@ public class menuPrincipal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.menu_principal);
 
         festaQuinze   = (LinearLayout) findViewById(R.id.festaQuinze);
         aniversario   = (LinearLayout) findViewById(R.id.aniversario);

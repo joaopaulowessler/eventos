@@ -9,7 +9,7 @@
     <string name="login_cadastro">Cadastre-se</string>
 
     <!-- Tela Cadastro -->
-    <string name="cadastro_titulo">Cadastro</string>
+    <string name="cadastro_titulo">Cadastro de Usuário</string>
     <string name="cadastro_nome">Nome:</string>
     <string name="cadastro_email">Email:</string>
     <string name="cadastro_data_nascimento">Data de Nascimento:</string>

@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
+    android:padding="30dp"
     android:background="@color/fundoLogin"
-    tools:context=".Login">
+    tools:context=".login">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,20 +29,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cadastro_nome"
-            android:textSize="15dp"/>
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"/>
 
         <EditText
             android:id="@+id/editNomeCadastro"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/shape_edtlogin"
-            />
+            android:height="35dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cadastro_email"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:layout_marginTop="15dp"
             />
 
@@ -51,57 +52,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/shape_edtlogin"
-
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/cadastro_data_nascimento"
-            android:textSize="15dp"
-            android:layout_marginTop="15dp"
-            />
-
-        <EditText
-            android:id="@+id/editDtNascCadastro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape_edtlogin"
-
-            android:inputType="date"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/cadastro_telefone"
-            android:textSize="15dp"
-            android:layout_marginTop="15dp"
-            />
-
-        <EditText
-            android:id="@+id/editTelefoneCadastro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape_edtlogin"
-            android:height="35dp"
-            android:inputType="phone"
-            />
+            android:height="35dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cadastro_senha"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:layout_marginTop="15dp"
             />
 
         <EditText
-            android:id="@+id/editEmail"
+            android:id="@+id/editSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/shape_edtlogin"
             android:height="35dp"
-            android:inputType="textPassword"
-            />
+            android:background="@drawable/shape_edtlogin"/>
 
         <Button
             android:id="@+id/btnSalvarCadastro"
@@ -111,8 +77,5 @@
             android:layout_marginTop="30dp"
             android:textSize="17dp"
             android:background="@drawable/shape_btnlogin"/>
-
-
     </LinearLayout>
-
 </ScrollView>
