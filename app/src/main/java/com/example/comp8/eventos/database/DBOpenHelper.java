@@ -8,7 +8,7 @@ import com.example.comp8.eventos.database.model.UsuarioModel;
 
 public class DBOpenHelper extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NOME = "enventos.db";
+    private static final String DATABASE_NOME = "eventos.db";
 
     private static final int DATABASE_VERSAO = 1;
 
