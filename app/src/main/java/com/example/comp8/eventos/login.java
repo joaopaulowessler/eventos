@@ -46,6 +46,16 @@ public class login extends AppCompatActivity {
                 if (userDAO.SelectUser(editEmail.getText().toString(), editSenha.getText().toString())){
 
                     SharedPreferences.Editor edit = preferences.edit();
+
+                    if (checkRelembrar.isChecked()) {
+                        edit.putString("editSenha",editSenha.getText().toString());
+                        edit.putString("checkRelembrar","SIM");
+                    }
+                    else {
+                        edit.putString("editSenha","");
+                        edit.putString("checkRelembrar", "");
+                    }
+
                     edit.putString("editEmail",editEmail.getText().toString());
                     edit.apply();
 
@@ -66,6 +76,16 @@ public class login extends AppCompatActivity {
 
         editEmail = (EditText) findViewById(R.id.editEmail);
         editEmail.setText(preferences.getString("editEmail",""));
+
+        editSenha = (EditText) findViewById(R.id.editSenha);
+        editSenha.setText(preferences.getString("editSenha",""));
+
+        checkRelembrar = (CheckBox) findViewById(R.id.checkRelembrar);
+
+        if (preferences.getString("checkRelembrar","").equals("SIM"))
+            checkRelembrar.setChecked(true);
+        else
+            checkRelembrar.setChecked(false);
     }
 
     public void onClick(View view ){

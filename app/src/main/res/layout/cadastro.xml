@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:text="@string/cadastro_nome"
             android:textSize="20dp"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="25dp"/>
 
         <EditText
             android:id="@+id/editNomeCadastro"
@@ -77,5 +77,15 @@
             android:layout_marginTop="30dp"
             android:textSize="17dp"
             android:background="@drawable/shape_btnlogin"/>
+
+        <TextView
+            android:id="@+id/textCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/cadastro_retornar"
+            android:textSize="15dp"
+            android:onClick="onClick"
+            android:layout_marginTop="15dp"/>
     </LinearLayout>
 </ScrollView>

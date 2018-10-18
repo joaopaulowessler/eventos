@@ -2,11 +2,14 @@ package com.example.comp8.eventos.database.dao;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Path;
+import android.preference.PreferenceManager;
 
 import com.example.comp8.eventos.database.DBOpenHelper;
 import com.example.comp8.eventos.database.model.UsuarioModel;
+import com.example.comp8.eventos.login;
 
 public class UsuarioDAO extends AbstractDAO{
 
@@ -60,6 +63,26 @@ public class UsuarioDAO extends AbstractDAO{
             Close();
         }
         return existeUsuario;
+    }
+
+    public boolean ValidaEmail (String email){
+
+        boolean existeEmail = false;
+        Cursor cursor = null;
+
+        try{
+            Open();
+
+            cursor = db.query(UsuarioModel.TABELA_NOME, colunas, UsuarioModel.EMAIL + " = ? ", new String[]{email}, null, null,null);
+
+            existeEmail = cursor.moveToFirst();
+        }
+        finally {
+            cursor.close();
+            Close();
+        }
+
+        return existeEmail;
     }
 
 }
