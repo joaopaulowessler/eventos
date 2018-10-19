@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#000000</color>
     <color name="fundoLogin">#CCCCCC</color>
+    <color name="btnLogin">#3161ff</color>
+    <color name="menu1">#D3D3D3</color>
+    <color name="menu2">#FFFFFF</color>
 </resources>
