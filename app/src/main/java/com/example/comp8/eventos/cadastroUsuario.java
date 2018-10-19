@@ -62,6 +62,8 @@ public class cadastroUsuario extends AppCompatActivity {
 
                 SharedPreferences.Editor edit = preferences.edit();
                 edit.putString("editEmail",editEmail.getText().toString());
+                edit.putString("editSenha","");
+                edit.putString("checkRelembrar","");
                 edit.apply();
 
                 finish();

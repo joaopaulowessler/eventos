@@ -39,7 +39,8 @@
             android:layout_marginTop="20dp"
             android:height="35dp"
             android:hint="@string/login_hint_email"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:inputType="textEmailAddress"/>
 
         <EditText
             android:id="@+id/editSenha"
@@ -49,18 +50,8 @@
             android:height="35dp"
             android:background="@drawable/shape_edtlogin"
             android:hint="@string/login_hint_senha"
-            android:textAlignment="center"/>
-
-        <!--<com.wrapp.floatlabelededittext.FloatLabeledEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            float:fletPadding="10dp">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Username" />
-        </com.wrapp.floatlabelededittext.FloatLabeledEditText>-->
+            android:textAlignment="center"
+            android:inputType="textPassword"/>
 
         <CheckBox
             android:id="@+id/checkRelembrar"
