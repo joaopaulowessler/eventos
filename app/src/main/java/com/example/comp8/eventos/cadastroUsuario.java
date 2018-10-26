@@ -38,35 +38,35 @@ public class cadastroUsuario extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (editNome.getText().toString().isEmpty()){
-                    Toast.makeText(cadastroUsuario.this, "Nome deve ser informado", Toast.LENGTH_SHORT).show();
-                    return;
-                }
+            if (editNome.getText().toString().isEmpty()){
+                Toast.makeText(cadastroUsuario.this, "Nome deve ser informado", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
-                if (editEmail.getText().toString().isEmpty()){
-                    Toast.makeText(cadastroUsuario.this, "Email deve ser informado", Toast.LENGTH_SHORT).show();
-                    return;
-                }
+            if (editEmail.getText().toString().isEmpty()){
+                Toast.makeText(cadastroUsuario.this, "Email deve ser informado", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
-                if (editSenha.getText().toString().isEmpty()){
-                    Toast.makeText(cadastroUsuario.this, "Senha deve ser informada", Toast.LENGTH_SHORT).show();
-                    return;
-                }
+            if (editSenha.getText().toString().isEmpty()){
+                Toast.makeText(cadastroUsuario.this, "Senha deve ser informada", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
-                if (userDAO.ValidaEmail(editEmail.getText().toString())){
-                    Toast.makeText(cadastroUsuario.this, "Email já cadastrado", Toast.LENGTH_SHORT).show();
-                    return;
-                }
+            if (userDAO.ValidaEmail(editEmail.getText().toString())){
+                Toast.makeText(cadastroUsuario.this, "Email já cadastrado", Toast.LENGTH_SHORT).show();
+                return;
+            }
 
-                userDAO.Insert(editEmail.getText().toString(),editSenha.getText().toString(),editNome.getText().toString());
+            userDAO.Insert(editEmail.getText().toString(),editSenha.getText().toString(),editNome.getText().toString());
 
-                SharedPreferences.Editor edit = preferences.edit();
-                edit.putString("editEmail",editEmail.getText().toString());
-                edit.putString("editSenha","");
-                edit.putString("checkRelembrar","");
-                edit.apply();
+            SharedPreferences.Editor edit = preferences.edit();
+            edit.putString("editEmail",editEmail.getText().toString());
+            edit.putString("editSenha","");
+            edit.putString("checkRelembrar","");
+            edit.apply();
 
-                finish();
+            finish();
             }
         });
     }
