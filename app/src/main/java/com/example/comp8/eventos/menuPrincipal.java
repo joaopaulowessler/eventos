@@ -36,7 +36,7 @@ public class menuPrincipal extends AppCompatActivity {
     }
 
     public void onClickQuinze(View view){
-        Toast.makeText(menuPrincipal.this, "QUINZE", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(menuPrincipal.this,cadastroQuinze.class));
     }
 
     public void onClickAniversario(View view){

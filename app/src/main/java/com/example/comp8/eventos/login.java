@@ -89,6 +89,7 @@ public class login extends AppCompatActivity {
     }
 
     public void onClick(View view ){
+
         startActivity(new Intent(login.this,cadastroUsuario.class));
     }
 }

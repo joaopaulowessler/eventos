@@ -25,7 +25,7 @@
     <string name="adc_idade">Idade:</string>
 
     <!-- Tela Cadastro -->
-    <string name="cadastro_titulo">Cadastro de Usuário</string>
+    <string name="cadastro_titulo">Cadastro Usuário</string>
     <string name="cadastro_nome">Nome:</string>
     <string name="cadastro_email">Email:</string>
     <string name="cadastro_data_nascimento">Data de Nascimento:</string>
@@ -33,4 +33,27 @@
     <string name="cadastro_senha">Senha:</string>
     <string name="cadastro_btn">Salvar</string>
     <string name="cadastro_retornar">Retornar</string>
+
+    <!-- Tela Cadastro Eventos -->
+    <string name="titulo_evt">Cadastro Evento</string>
+    <string name="aniversariante">Aniversariante:</string>
+    <string name="dt_inicio">Data:</string>
+    <string name="dt_final">Hora: </string>
+    <string name="qtd_pessoas">Quantidade de Pessoas:</string>
+    <string name="endereco">Endereço:</string>
+    <string name="decoracao">Decoração:</string>
+    <string name="musico">Música:</string>
+    <string name="btn_convidados">Listar Convidados</string>
+
+
+    <!-- Resultado -->
+    <string name="titulo_resultado">Resultado</string>
+    <string name="agua">Água:</string>
+    <string name="cerveja">Cerveja:</string>
+    <string name="refrigerante">Refrigerante:</string>
+    <string name="suco">Suco:</string>
+    <string name="retornar">Retornar</string>
+
+
+
 </resources>

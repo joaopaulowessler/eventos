@@ -21,6 +21,9 @@
         </activity>
         <activity android:name=".menuPrincipal"/>
         <activity android:name=".cadastroUsuario"/>
+        <activity android:name=".listagemEventos"/>
+        <activity android:name=".adicionarConvidado"/>
+        <activity android:name=".cadastroQuinze"
+                  android:parentActivityName="com.example.comp8.eventos.menuPrincipal"/>
     </application>
-
 </manifest>

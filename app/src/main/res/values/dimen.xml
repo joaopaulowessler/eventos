@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="sizeText">28sp</dimen>
+    <dimen name="height">35dp</dimen>
+    <dimen name="sizeText">30dp</dimen>
+    <dimen name="paddingText">20dp</dimen>
+    <dimen name="marginTop">10dp</dimen>
+    <dimen name="sizeTextBtn">17dp</dimen>
 </resources>

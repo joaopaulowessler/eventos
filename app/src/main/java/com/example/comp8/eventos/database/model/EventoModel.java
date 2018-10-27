@@ -59,6 +59,33 @@ public class EventoModel {
 
     public static final String DROP_TABLE = "drop table if exists " + TABELA_NOME + ";";
 
+    public EventoModel(){
+        this.ID              = "";
+        this.TIPO            = "";
+        this.NOME            = "";
+        this.CPF             = "";
+        this.TELEFONE        = "";
+        this.EMAIL           = "";
+        this.ANIVERSARIANTE  = "";
+        this.DATA            = "";
+        this.HORA            = "";
+        this.CONTMUSICA      = "";
+        this.QTDPESSOAS      = "";
+        this.LOCALFESTA      = "";
+        this.DECORACAO       = "";
+        this.BRINQUEDO       = "";
+        this.COMIDA          = "";
+        this.MUSICO          = "";
+        this.FOTOGRAFIA      = "";
+        this.NOMEEMP         = "";
+        this.CURSO           = "";
+        this.PERIODO         = "";
+        this.UNIVERSIDADE    = "";
+        this.NOIVO           = "";
+        this.NOIVA           = "";
+        this.OBSERVACAO      = "";
+    }
+
     public static String getID() {
         return ID;
     }

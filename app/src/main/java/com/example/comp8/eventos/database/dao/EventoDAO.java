@@ -10,6 +10,9 @@ import android.preference.PreferenceManager;
 import com.example.comp8.eventos.database.DBOpenHelper;
 import com.example.comp8.eventos.database.model.EventoModel;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class EventoDAO extends AbstractDAO{
 
     private final String[] colunas =
@@ -85,43 +88,28 @@ public class EventoDAO extends AbstractDAO{
         return retorno;
     }
 
-    public boolean SelectUser (String email, String senha){
+    public ArrayList<EventoModel> getEventos (Integer tipo){
 
-        boolean existeUsuario = false;
+        ArrayList<EventoModel> eventosList = null;
+
         Cursor cursor = null;
 
         try{
             Open();
 
-            cursor = db.query(UsuarioModel.TABELA_NOME, colunas, UsuarioModel.EMAIL + " = ? and " +
-                    UsuarioModel.SENHA + " = ? ", new String[]{email, senha}, null, null,null);
+            cursor = db.query(EventoModel.TABELA_NOME, colunas, EventoModel.TIPO + " = ? ", new String[]{tipo.toString()}, null, null,null);
 
-            existeUsuario = cursor.moveToFirst();
-        }
-        finally {
-            cursor.close();
-            Close();
-        }
-        return existeUsuario;
-    }
-
-    public boolean ValidaEmail (String email){
-
-        boolean existeEmail = false;
-        Cursor cursor = null;
-
-        try{
-            Open();
-
-            cursor = db.query(UsuarioModel.TABELA_NOME, colunas, UsuarioModel.EMAIL + " = ? ", new String[]{email}, null, null,null);
-
-            existeEmail = cursor.moveToFirst();
+            while (cursor.moveToFirst()){
+                EventoModel ev = new EventoModel();
+                String teste = cursor.getString(cursor.getColumnIndex(""));
+                eventosList.add(ev);
+            }
         }
         finally {
             cursor.close();
             Close();
         }
 
-        return existeEmail;
+        return eventosList;
     }
 }
