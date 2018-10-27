@@ -8,17 +8,19 @@ import android.widget.TextView;
 
 import com.example.comp8.eventos.R;
 import com.example.comp8.eventos.database.model.EventoModel;
+import com.example.comp8.eventos.objetos.Evento;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ListaEventoAdapter extends BaseAdapter {
 
-    private Activity          activity;
-    private List<EventoModel> eventos;
+    private Activity     activity;
+    private ArrayList<Evento> eventos;
 
-    public ListaEventoAdapter(Activity activity, List<EventoModel> eventos){
+    public ListaEventoAdapter(Activity activity, ArrayList<Evento> eventos){
 
         this.activity = activity;
         this.eventos  = eventos;
@@ -36,7 +38,8 @@ public class ListaEventoAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int position) {
-        return Long.parseLong(eventos.get(position).getID());
+
+        return Long.parseLong(eventos.get(position).getID().toString());
     }
 
     @Override
@@ -52,6 +55,4 @@ public class ListaEventoAdapter extends BaseAdapter {
 
         return v;
     }
-
-
 }

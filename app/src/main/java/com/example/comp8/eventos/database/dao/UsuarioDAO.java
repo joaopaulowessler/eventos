@@ -2,14 +2,10 @@ package com.example.comp8.eventos.database.dao;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.database.Cursor;
-import android.graphics.Path;
-import android.preference.PreferenceManager;
 
 import com.example.comp8.eventos.database.DBOpenHelper;
 import com.example.comp8.eventos.database.model.UsuarioModel;
-import com.example.comp8.eventos.login;
 
 public class UsuarioDAO extends AbstractDAO{
 

@@ -1,8 +1,6 @@
 package com.example.comp8.eventos;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -10,8 +8,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.comp8.eventos.database.dao.EventoDAO;
-import com.example.comp8.eventos.database.dao.UsuarioDAO;
 import com.example.comp8.eventos.database.model.EventoModel;
+import com.example.comp8.eventos.objetos.Evento;
 
 public class cadastroQuinze extends AppCompatActivity{
 
@@ -65,7 +63,32 @@ public class cadastroQuinze extends AppCompatActivity{
                     return;
                 }
 
-                EventoModel ev = new EventoModel();
+                if (edtData.getText().toString().isEmpty()){
+                    Toast.makeText(cadastroQuinze.this, "Data deve ser informada", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (edtHora.getText().toString().isEmpty()){
+                    Toast.makeText(cadastroQuinze.this, "Hora deve ser informada", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (edtEndereco.getText().toString().isEmpty()){
+                    Toast.makeText(cadastroQuinze.this, "Endereço deve ser informado", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                Evento ev = new Evento();
+
+                ev.setTIPO(1);
+                ev.setNOME(edtResponsavel.getText().toString());
+                ev.setANIVERSARIANTE(edtAniversariante.getText().toString());
+                ev.setDATA(edtData.getText().toString());
+                ev.setHORA(edtHora.getText().toString());
+                ev.setQTDPESSOAS(edtQtdPessoas.getText().toString());
+                ev.setLOCALFESTA(edtEndereco.getText().toString());
+                ev.setDECORACAO(edtDecoracao.getText().toString());
+                ev.setMUSICO(edtMusica.getText().toString());
 
                 eventoDAO.Insert(ev);
 

@@ -36,7 +36,8 @@ public class menuPrincipal extends AppCompatActivity {
     }
 
     public void onClickQuinze(View view){
-        startActivity(new Intent(menuPrincipal.this,cadastroQuinze.class));
+        startActivity(new Intent(menuPrincipal.this,listagemEventos.class));
+        /*startActivity(new Intent(menuPrincipal.this,cadastroQuinze.class));*/
     }
 
     public void onClickAniversario(View view){
