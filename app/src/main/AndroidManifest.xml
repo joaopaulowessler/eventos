@@ -25,5 +25,19 @@
         <activity android:name=".adicionarConvidado"/>
         <activity android:name=".cadastroQuinze"
                   android:parentActivityName="com.example.comp8.eventos.menuPrincipal"/>
+        <activity android:name=".cadastroChurrasco"
+                  android:parentActivityName="com.example.comp8.eventos.menuPrincipal"/>
+        <activity android:name=".cadastroAniversario"
+                  android:parentActivityName="com.example.comp8.eventos.menuPrincipal"/>
+        <activity android:name=".cadastroCasamento"
+                  android:parentActivityName="com.example.comp8.eventos.menuPrincipal"/>
+        <activity android:name=".cadastroEmpresarial"
+                  android:parentActivityName="com.example.comp8.eventos.menuPrincipal"/>
+        <activity android:name=".cadastroFormatura"
+                  android:parentActivityName="com.example.comp8.eventos.menuPrincipal"/>
+        <activity android:name=".cadastroGeral"
+                  android:parentActivityName="com.example.comp8.eventos.menuPrincipal"/>
+        <activity android:name=".cadastroInfantil"
+                  android:parentActivityName="com.example.comp8.eventos.menuPrincipal"/>
     </application>
 </manifest>

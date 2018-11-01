@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="30dp"
     android:background="@color/fundoLogin"
-    tools:context=".cadastroQuinze">
+    tools:context=".cadastroChurrasco">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +18,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="15 Anos"
+            android:text="Churrasco"
             android:textColor="@color/colorPrimary"
             android:textAlignment="center"
             android:textSize="30dp"/>
@@ -43,13 +42,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/aniversariante"
+            android:text="N° / Descrição Churrasqueira:"
             android:textSize="@dimen/paddingText"
             android:textColor="@color/colorPrimary"
             android:layout_marginTop="@dimen/marginTop"/>
 
         <EditText
-            android:id="@+id/edtAniversariante"
+            android:id="@+id/edtChurrasqueira"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/shape_edtlogin"
@@ -133,39 +132,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/shape_edtlogin"
-            android:height="@dimen/height"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/decoracao"
-            android:textSize="@dimen/paddingText"
-            android:textColor="@color/colorPrimary"
-            android:layout_marginTop="@dimen/marginTop"/>
-
-        <EditText
-            android:id="@+id/edtDecoracao"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape_edtlogin"
             android:height="@dimen/height"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/musico"
-            android:textSize="@dimen/paddingText"
-            android:textColor="@color/colorPrimary"
-            android:layout_marginTop="@dimen/marginTop"/>
-
-        <EditText
-            android:id="@+id/edtMusica"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape_edtlogin"
-            android:height="@dimen/height"
-            android:layout_marginBottom="@dimen/marginTop"/>
 
         <LinearLayout
             android:layout_width="match_parent"

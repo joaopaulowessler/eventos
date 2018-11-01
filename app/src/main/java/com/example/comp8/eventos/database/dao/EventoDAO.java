@@ -89,7 +89,7 @@ public class EventoDAO extends AbstractDAO{
 
     public ArrayList<Evento> getEventos (Integer tipo){
 
-        Cursor cursor = null;
+        /*Cursor cursor = null;
 
         try{
             Open();
@@ -129,7 +129,17 @@ public class EventoDAO extends AbstractDAO{
         finally {
             cursor.close();
             Close();
-        }
+        }*/
+
+
+        Evento ev = new Evento();
+        ev.setNOME("JOAO");
+        ev.setDATA("10/10/2018");
+        eventosList.add(ev);
+
+        ev.setNOME("PAULO");
+        ev.setDATA("20/10/2018");
+        eventosList.add(ev);
 
         return eventosList;
     }
