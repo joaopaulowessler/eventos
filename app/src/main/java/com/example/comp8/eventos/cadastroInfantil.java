@@ -80,7 +80,7 @@ public class cadastroInfantil extends AppCompatActivity{
 
                 Evento ev = new Evento();
 
-                ev.setTIPO(4);
+                ev.setTIPO(7);
                 ev.setNOME(edtResponsavel.getText().toString());
                 ev.setANIVERSARIANTE(edtAniversariante.getText().toString());
                 ev.setDATA(edtData.getText().toString());

@@ -8,7 +8,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.comp8.eventos.database.dao.EventoDAO;
-import com.example.comp8.eventos.database.model.EventoModel;
 import com.example.comp8.eventos.objetos.Evento;
 
 public class cadastroQuinze extends AppCompatActivity{

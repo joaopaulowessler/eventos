@@ -36,35 +36,58 @@ public class menuPrincipal extends AppCompatActivity {
     }
 
     public void onClickQuinze(View view){
-        startActivity(new Intent(menuPrincipal.this,listagemEventos.class));
-        /*startActivity(new Intent(menuPrincipal.this,cadastroQuinze.class));*/
+
+        Intent it = new Intent(this, listagemEventos.class);
+        it.putExtra("Tipo", "1");
+        startActivity(it);
     }
 
     public void onClickAniversario(View view){
-        Toast.makeText(menuPrincipal.this, "ANIVERSARIO", Toast.LENGTH_SHORT).show();
+
+        Intent it = new Intent(this, listagemEventos.class);
+        it.putExtra("Tipo", "2");
+        startActivity(it);
     }
 
     public void onClickCasamento(View view){
-        Toast.makeText(menuPrincipal.this, "CASAMENTO", Toast.LENGTH_SHORT).show();
+
+        Intent it = new Intent(this, listagemEventos.class);
+        it.putExtra("Tipo", "3");
+        startActivity(it);
     }
 
     public void onClickChurrasco(View view){
-        Toast.makeText(menuPrincipal.this, "CHURRAS", Toast.LENGTH_SHORT).show();
+
+        Intent it = new Intent(this, listagemEventos.class);
+        it.putExtra("Tipo", "4");
+        startActivity(it);
     }
 
     public void onClickEmpresarial(View view){
-        Toast.makeText(menuPrincipal.this, "EMPRESARIAL", Toast.LENGTH_SHORT).show();
+
+        Intent it = new Intent(this, listagemEventos.class);
+        it.putExtra("Tipo", "5");
+        startActivity(it);
     }
 
     public void onClickFesta(View view){
-        Toast.makeText(menuPrincipal.this, "FESTA", Toast.LENGTH_SHORT).show();
+
+        Intent it = new Intent(this, listagemEventos.class);
+        it.putExtra("Tipo", "6");
+        startActivity(it);
     }
 
     public void onClickInfantil(View view){
-        Toast.makeText(menuPrincipal.this, "INFANTIL", Toast.LENGTH_SHORT).show();
+
+        Intent it = new Intent(this, listagemEventos.class);
+        it.putExtra("Tipo", "7");
+        startActivity(it);
     }
 
     public void onClickFormatura(View view){
-        Toast.makeText(menuPrincipal.this, "FORMATURA", Toast.LENGTH_SHORT).show();
+
+        Intent it = new Intent(this, listagemEventos.class);
+        it.putExtra("Tipo", "8");
+        startActivity(it);
     }
 }

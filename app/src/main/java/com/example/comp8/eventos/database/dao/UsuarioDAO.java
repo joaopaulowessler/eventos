@@ -54,6 +54,9 @@ public class UsuarioDAO extends AbstractDAO{
 
             existeUsuario = cursor.moveToFirst();
         }
+        catch (Exception ex) {
+            ex.printStackTrace();
+        }
         finally {
             cursor.close();
             Close();

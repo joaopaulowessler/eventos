@@ -9,8 +9,8 @@ public class EventoModel {
             TIPO            = "tipo",
             NOME            = "nome",
             CPF             = "cpf",
-            TELEFONE        = "telefone,",
-            EMAIL           = "email,",
+            TELEFONE        = "telefone",
+            EMAIL           = "email",
             ANIVERSARIANTE  = "aniversariante",
             DATA            = "data",
             HORA            = "hora",
@@ -37,6 +37,7 @@ public class EventoModel {
             + NOME           + " text,"
             + CPF            + " text,"
             + TELEFONE       + " text,"
+            + EMAIL          + " text,"
             + ANIVERSARIANTE + " text,"
             + DATA           + " text,"
             + HORA           + " text,"
@@ -44,6 +45,7 @@ public class EventoModel {
             + QTDPESSOAS     + " integer,"
             + LOCALFESTA     + " text,"
             + DECORACAO      + " text,"
+            + BRINQUEDO      + " text,"
             + COMIDA         + " text,"
             + MUSICO         + " text,"
             + FOTOGRAFIA     + " text,"

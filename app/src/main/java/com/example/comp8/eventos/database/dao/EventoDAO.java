@@ -89,12 +89,12 @@ public class EventoDAO extends AbstractDAO{
 
     public ArrayList<Evento> getEventos (Integer tipo){
 
-        /*Cursor cursor = null;
+        Cursor cursor = null;
 
         try{
             Open();
 
-            cursor = db.query(EventoModel.TABELA_NOME, colunas, EventoModel.TIPO + " = ? ", new String[]{tipo.toString()}, null, null,null);
+            cursor = db.query(EventoModel.TABELA_NOME, colunas, EventoModel.TIPO + " = ? ", new String[]{""+tipo}, null, null,null);
 
             while (cursor.moveToNext()){
                 Evento ev = new Evento();
@@ -126,20 +126,14 @@ public class EventoDAO extends AbstractDAO{
                 eventosList.add(ev);
             }
         }
+        catch (Exception ex) {
+            ex.printStackTrace();
+        }
         finally {
+            if (cursor != null)
             cursor.close();
             Close();
-        }*/
-
-
-        Evento ev = new Evento();
-        ev.setNOME("JOAO");
-        ev.setDATA("10/10/2018");
-        eventosList.add(ev);
-
-        ev.setNOME("PAULO");
-        ev.setDATA("20/10/2018");
-        eventosList.add(ev);
+        }
 
         return eventosList;
     }

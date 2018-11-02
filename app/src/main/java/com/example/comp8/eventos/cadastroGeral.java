@@ -73,7 +73,7 @@ public class cadastroGeral extends AppCompatActivity{
 
                 Evento ev = new Evento();
 
-                ev.setTIPO(4);
+                ev.setTIPO(6);
                 ev.setNOME(edtResponsavel.getText().toString());
                 ev.setDATA(edtData.getText().toString());
                 ev.setHORA(edtHora.getText().toString());

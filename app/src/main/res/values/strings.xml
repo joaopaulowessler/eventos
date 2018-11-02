@@ -14,7 +14,7 @@
     <string name="menu_casamento">Casamento</string>
     <string name="menu_churrasco">Churrasco</string>
     <string name="menu_empresarial">Empresarial</string>
-    <string name="menu_festa_geral">Festa em geral</string>
+    <string name="menu_festa_geral">Festa em Geral</string>
     <string name="menu_festa_infantil">Festa Infantil</string>
     <string name="menu_formatura">Formatura</string>
 
@@ -54,6 +54,8 @@
     <string name="suco">Suco:</string>
     <string name="retornar">Retornar</string>
 
-
+    <string name="listItemNome"><b>Nome:</b></string>
+    <string name="listItemData"><b>Data:</b></string>
+    <string name="listItemHora"><b>Hora:</b></string>
 
 </resources>

@@ -5,23 +5,39 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="15dp"
-            >
+            android:padding="15dp">
 
-            <TextView
-                android:id="@+id/etdNome"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorPrimary"
-                android:textSize="20dp"
-                android:text="Nome"/>
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/etdResponsavel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:text="@string/listItemNome"/>
+
+                <TextView
+                    android:id="@+id/etdNome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Nome"/>
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -34,7 +50,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20dp"
-                    android:text="Data: " />
+                    android:text="@string/listItemData" />
 
                 <TextView
                     android:id="@+id/edtData"
@@ -42,14 +58,49 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20dp"
+                    android:layout_marginLeft="5dp"
                     android:text="Data"/>
+
+                <TextView
+                    android:id="@+id/edtLabelHora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/listItemHora" />
+
+                <TextView
+                    android:id="@+id/edtHora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Hora"/>
             </LinearLayout>
+
         </LinearLayout>
 
-        <ImageView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icone_entrar_menu_princ"
-            android:layout_gravity="center"/>
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnConvidado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_usuario"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/btnEditar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit_evento"
+                android:layout_gravity="center"/>
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
